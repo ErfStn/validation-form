@@ -1,0 +1,69 @@
+form {
+  height: 40rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.formControl {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  width: 100%;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  padding: 8px 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.formControl input:focus,
+select:focus {
+  border: 2px solid blueviolet;
+}
+.formControl label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.listControl,.terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.listControl label {
+  margin: 0 8px;
+}
+.listControl input[type="radio"] {
+  margin: 0;
+}
+input[type="checkbox"]{
+  margin: 0;
+}
+form button {
+  color: blueviolet;
+  background-color: rgb(244, 238, 250);
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  padding: 8px;
+  outline: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+form button:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: auto;
+}
+form button:focus {
+  border: 2px solid blueviolet;
+}
+.error {
+  color: red;
+  margin: 5px 0 0 5px;
+}
