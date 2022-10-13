@@ -15,7 +15,7 @@ const radioOptions = [
 ];
 const selectOptions = [
   { name: "Select Nationality ...", value: "" },
-  { name: "Iran", value: "IR" },
+  { name: "Persian", value: "IR" },
   { name: "Germany", value: "GER" },
   { name: "USA", value: "USA" },
 ];
@@ -39,7 +39,7 @@ const initialValues = {
 };
 
 const validationSchema = yup.object({
-  username: yup.string().required("Name is required"),
+  username: yup.string().max(12, "its too long!").required("Name is required"),
   email: yup.string().email("Invalid email").required("Email is required"),
   number: yup
     .string()
