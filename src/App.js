@@ -2,13 +2,11 @@ import "./App.css";
 import SignUp from "./Component/SignUp/SignUp";
 
 function App() {
-  return (
-    <div className="App">
-      <div>
-        <SignUp />
-      </div>
-    </div>
-  );
+	return (
+		<div className="App">
+			<SignUp />
+		</div>
+	);
 }
 
 export default App;
